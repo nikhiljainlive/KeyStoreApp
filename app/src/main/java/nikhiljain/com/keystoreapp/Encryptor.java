@@ -50,6 +50,8 @@ class Encryptor {
         return (encryption = cipher.doFinal(textToEncrypt.getBytes("UTF-8")));
     }
 
+    //
+
     @SuppressLint("NewApi")
     @NonNull
     private SecretKey getSecretKey(final String alias) throws NoSuchAlgorithmException,
